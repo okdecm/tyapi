@@ -172,6 +172,14 @@
 				"@typescript-eslint/no-empty-interface": "off",
 				"@typescript-eslint/no-non-null-assertion": "off"
 			}
+		},
+		{
+			"files": [
+				"*.test.ts"
+			],
+			"rules": {
+				"brace-style": "off"
+			}
 		}
 	],
 	"ignorePatterns": [
