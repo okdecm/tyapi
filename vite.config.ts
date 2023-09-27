@@ -1,6 +1,7 @@
-import path from "path";
+/// <reference types="vitest" />
 import { defineConfig } from "vite";
 
+import path from "path";
 import typescript from "@rollup/plugin-typescript";
 
 export default defineConfig({
@@ -25,8 +26,17 @@ export default defineConfig({
 					sourceMap: true,
 					declaration: true,
 					outDir: "dist",
+					exclude: [
+						"*.test.ts"
+					]
 				})
 			]
 		}
+	},
+
+	test: {
+		include: [
+			"src/**/*.test.ts"
+		]
 	}
 });

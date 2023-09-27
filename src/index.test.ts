@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 
-import { hello } from "index";
+import { hello } from "./index";
 
 describe("#index", () => {
 	it("says hello to world", () => {
