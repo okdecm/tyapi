@@ -1,0 +1,47 @@
+{
+	"name": "tyapi",
+	"version": "0.0.1",
+	"description": "Framework to strictly type API definitions using TypeScript",
+	"author": "Dec Murphy",
+	"license": "MIT",
+	"homepage": "https://github.com/okdecm/tyapi#readme",
+	"bugs": {
+		"url": "https://github.com/okdecm/tyapi/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/okdecm/tyapi.git"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"package.json",
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"lint": "eslint",
+		"build": "vite build",
+		"test": "vitest",
+		"coverage": "vitest --coverage",
+		"prepublishOnly": "npm run test && npm run build"
+	},
+	"devDependencies": {
+		"@rollup/plugin-typescript": "^11.1.4",
+		"@typescript-eslint/eslint-plugin": "^6.7.3",
+		"@typescript-eslint/parser": "^6.7.3",
+		"eslint": "^8.50.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.2.2",
+		"vite": "^4.4.9"
+	}
+}
