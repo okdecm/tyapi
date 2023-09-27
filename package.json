@@ -31,8 +31,9 @@
 	"scripts": {
 		"lint": "eslint",
 		"build": "vite build",
-		"test": "vitest",
-		"coverage": "vitest --coverage",
+		"test": "vitest run",
+		"test:watch": "vitest watch",
+		"test:coverage": "vitest --coverage",
 		"prepublishOnly": "npm run test && npm run build"
 	},
 	"devDependencies": {
