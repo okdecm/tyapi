@@ -1,5 +1,5 @@
 {
-	"name": "tyapi",
+	"name": "@tyapi/core",
 	"version": "0.0.1",
 	"description": "Framework to strictly type API definitions using TypeScript",
 	"author": "Dec Murphy",
