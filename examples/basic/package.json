@@ -1,10 +1,14 @@
 {
+    "type": "module",
     "scripts": {
-        "server": "ts-node-dev --respawn --transpile-only ./src/server.ts",
-        "client": "ts-node-dev --respawn --transpile-only ./src/client.ts"
+        "server": "tsx watch ./src/server.ts",
+        "client": "tsx watch ./src/client.ts"
     },
     "devDependencies": {
-        "ts-node-dev": "^2.0.0",
+        "tsx": "^3.13.0",
         "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@tyapi/core": "workspace:^"
     }
 }
