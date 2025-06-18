@@ -8,7 +8,7 @@ API composition library
 
 ## Introduction
 ### Why?
-For years I've wasted hours writing boilerplate code for my API's - from design, implementation, to consumption.
+For years I've wasted hours writing boilerplate code for my APIs - from design, implementation, to consumption.
 Along this journey I've faced the same frustrating hurdles - mismatched typings, code duplication, lack of documentation.
 This has resulted in countless bugs, lost motivation, to full rewrites.
 
